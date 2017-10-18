@@ -1,0 +1,377 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*Fin du reset*/
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*Bootstrap*/
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+
+    .pb-2 img{margin-bottom: 2em;}
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      color: #3b3c3b;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.img-responsive{
+ margin: 0 auto;
+}
+
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,900');
+
+body{background: #fff;font-family: Roboto, arial, sans-serif; color:#3b3c3b;}
+section {padding: 1em;}
+.demo-2 { background: #fff; }
+
+h1,h2,h3,h4, a{font-family:'Roboto',sans-serif;}
+
+h1{font-weight: 900;font-size: 1.5em;color: #fed136;}
+h2{font-size: 1em;padding-bottom: 0.5em;font-weight: 300;}
+h3{font-size: 1.5em;text-transform: uppercase;font-weight:700; letter-spacing: 0.4em;}
+h4{font-size: 1.1em;}
+
+span.link i{display: inline-block;color:#fed136;font-size: 1em;padding-right: 15px;}
+
+.presentation{
+  margin-bottom: 2em;
+}
+
+.presentation img{
+  margin:0 auto;
+}
+
+.portfolio{
+	position: relative;
+	overflow: hidden;
+	max-width: 100%;
+	margin-bottom: 2em;
+  opacity: 0.7;
+}
+
+.portfolio .twoimg{
+	margin-bottom: 0;
+	padding: 0;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0px;
+  opacity: 0;
+  transition: .5s ease;
+  width: 100%;
+  height: 40px;
+  background-color: #fed136;
+}
+
+.overlay p{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #fff;
+  padding-top: 10px;
+  letter-spacing: 5px;
+}
+
+.portfolio img {
+  max-width: 100%;
+  
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+/*  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);*/
+}
+
+.portfolio:hover img {
+  -moz-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+/*  filter: none;
+  -moz-filter: none;
+  -ms-filter: none;
+  -o-filter: none;*/
+}
+
+.portfolio:hover{
+  opacity: 1;
+}
+
+.portfolio:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: #fed136;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.pres p{
+  font-family: Roboto, arial, sans-serif;
+  font-weight:300;
+  line-height:1.9em;
+  font-size: 0.9em;
+  text-align: left;
+  width: 100%;
+  padding-left: 0.7em;
+  }
+
+  span.talk{
+    text-align: left;
+    float: left;
+    color: #fed136;
+    padding: 0.4em 1em 0 0;
+  }
+
+.skills{
+  text-align: left;
+  font-size: 0.9em;
+  font-weight: 300;
+  line-height: 3em;
+  margin: 4em 0 1em 0;
+}
+
+.skills img{
+  width: 1.2em;
+  margin: 0 1.2em 0 1.2em;
+}
+
+ul li{
+  display: inline-block;
+}
+
+/*Projets*/
+
+.logo img{width: 120px;text-align: center;padding-bottom: 7em;}
+
+.prev{
+  font-size: 0.8em;
+  padding-right: 4em;
+  text-align: center;
+}
+
+.prev.one{padding-bottom: 4em;}
+.prev.two{padding-top: 4em;}
+
+ul.prev a, .prev a{
+  text-decoration: none;
+  color:#3b3c3b;
+}
+
+ul.prev a:hover, .prev a:hover{
+  color:#fed136;
+}
+
+ul.prev a{
+  font-family: Roboto, arial, sans-serif;
+  font-weight:300;
+  line-height:1.9em;
+  letter-spacing: 0.3em;
+}
+
+ul.prev a:first-child{
+  padding-right: 3em;
+}
+
+ul.prev a:last-child{
+  padding-left: 3em;
+}
+
+.title{
+  padding: 1em 0 3em 0;
+}
+
+.title p{
+  padding-top:1em;
+  font-weight: 300;
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+.expl{padding-bottom: 0.2em;}
+.expl p{
+  font-family: Roboto, arial, sans-serif;
+  font-weight:300;
+  line-height:1.9em;
+  font-size: 0.9em;
+  text-align: left;
+  width: 100%;
+  padding-left: 0.7em;
+  padding-bottom: 1em;
+  }
+
+.expl span.sub{
+  font-weight: 400;
+  text-align: left;
+  line-height:1.9em;
+  font-size: 0.9em;
+}
+
+.expl p a{
+  font-weight: 400;
+  text-align: left;
+  line-height:1.9em;
+  font-size: 1em;
+  color:#3b3c3b;
+}
+
+.expl p a:hover{color:#fed136;}
+
+.detail{padding: 0.2em 0 2em 0;}
+
+.detail p{
+  font-family: Roboto, arial, sans-serif;
+  font-weight:300;
+  line-height:1.9em;
+  font-size: 0.75em;
+  text-align: left;
+  width: 100%;
+  padding-left: 0.7em;
+  }
+
+footer{clear: both;}
+
+footer p{
+  font-family: Roboto, arial, sans-serif;
+  font-weight:300;
+  line-height:1.9em;
+  font-size: 0.9em;
+  letter-spacing: 0.3em;
+}
+
+/*Video*/
+video::-webkit-media-controls-fullscreen-button{
+    display: none;
+}
+
+video::-ms-media-controls-fullscreen-button{
+    display: none;
+}
+
+video::-moz-media-controls-fullscreen-button{
+    display: none;
+}
+
+video{
+  margin-left: 0;
+  margin-top: }
+
+@media (max-width:1200px){
+  .prev{
+  padding-right: 0;
+  padding-left: 4em;
+  text-align: center;
+  }
+  ul.prev a:first-child{
+  padding-right: 4em;
+  }
+
+  ul.prev a:last-child{
+    padding-left: 4em;
+  }
+}
+
+@media (max-width:650px){
+  .prev{
+  font-size: 0.7em;
+  padding-right: 0;
+  padding-left: 0;
+  text-align: center;
+  }
+  ul.prev a:first-child{
+  padding-right: 1em;
+  }
+
+  ul.prev a:last-child{
+    padding-left: 1em;
+  }
+}
