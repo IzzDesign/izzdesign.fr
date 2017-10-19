@@ -114,6 +114,8 @@ h3{font-size: 1.5em;text-transform: uppercase;font-weight:700; letter-spacing: 0
 h4{font-size: 1.1em;}
 
 span.link i{display: inline-block;color:#fed136;font-size: 1em;padding-right: 15px;}
+/*span.link p{display: inline-block;color:#fed136;font-size:0.9em; padding: 0 0 0 5px;}*/
+span.link i:first-child{padding-right: 5px;}
 
 .presentation{
   margin-bottom: 2em;
@@ -362,7 +364,7 @@ video{
 
 @media (max-width:650px){
   .prev{
-  font-size: 0.7em;
+  font-size: 0.6em;
   padding-right: 0;
   padding-left: 0;
   text-align: center;
@@ -373,5 +375,14 @@ video{
 
   ul.prev a:last-child{
     padding-left: 1em;
+  }
+
+  .title p{
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .overlay p{
+    font-size: 0.8em;
   }
 }
