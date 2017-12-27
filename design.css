@@ -54,51 +54,6 @@ table {
   box-sizing: border-box;
 }
 
-/*Bootstrap*/
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-    }
-    
-    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: 450px}
-    
-    /* Set gray background color and 100% height */
-    .sidenav {
-      padding-top: 20px;
-      background-color: #f1f1f1;
-      height: 100%;
-    }
-
-    .pb-2 img{margin-bottom: 2em;}
-    
-    /* Set black background color, white text and some padding */
-    footer {
-      color: #3b3c3b;
-      padding: 15px;
-    }
-    
-    /* On small screens, set height to 'auto' for sidenav and grid */
-    @media screen and (max-width: 767px) {
-      .sidenav {
-        height: auto;
-        padding: 15px;
-      }
-      .row.content {height:auto;} 
-    }
-
-.row-eq-height {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.img-responsive{
- margin: 0 auto;
-}
-
 /*Fonts*/
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,400,900');
 
