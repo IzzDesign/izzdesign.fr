@@ -63,8 +63,8 @@ section {padding: 1em;}
 
 h1,h2,h3,h4, a{font-family:'Roboto',sans-serif;}
 
-h1{font-weight: 900;font-size: 1.5em;color: #fed136;}
-h2{font-size: 1em;padding-bottom: 0.5em;font-weight: 300;}
+h1{font-weight: 900;font-size: 1.6em;color: #fed136;}
+h2{font-size: 1.2em;padding-bottom: 0.2em;font-weight: 300;}
 h3{font-size: 1.5em;text-transform: uppercase;font-weight:700; letter-spacing: 0.4em;}
 h4{font-size: 1.1em;}
 
@@ -109,6 +109,7 @@ span.link i:first-child{padding-right: 5px;}
   color: #fff;
   padding-top: 10px;
   letter-spacing: 5px;
+  font-size: 1.2em;
 }
 
 .portfolio img {
@@ -156,7 +157,7 @@ span.link i:first-child{padding-right: 5px;}
   font-family: Roboto, arial, sans-serif;
   font-weight:300;
   line-height:1.9em;
-  font-size: 0.9em;
+  font-size: 1.1em;
   text-align: left;
   width: 100%;
   padding-left: 0.7em;
@@ -171,14 +172,14 @@ span.link i:first-child{padding-right: 5px;}
 
 .skills{
   text-align: left;
-  font-size: 0.9em;
+  font-size: 1em;
   font-weight: 300;
   line-height: 3em;
-  margin: 4em 0 1em 0;
+  margin-bottom: 2em;
 }
 
 .skills img{
-  width: 1.2em;
+  width: 1.4em;
   margin: 0 1.2em 0 1.2em;
 }
 
@@ -275,13 +276,13 @@ ul.prev a:last-child{
   padding-left: 0.7em;
   }
 
-footer{clear: both;}
+footer{clear: both;margin-bottom: 1em;}
 
 footer p{
   font-family: Roboto, arial, sans-serif;
   font-weight:300;
   line-height:1.9em;
-  font-size: 0.9em;
+  font-size: 1em;
   letter-spacing: 0.3em;
 }
 
@@ -300,7 +301,19 @@ video::-moz-media-controls-fullscreen-button{
 
 video{
   margin-left: 0;
-  margin-top: }
+  }
+
+.carousel-control-next-icon{
+  height: 50px;
+  width: 50px;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fed136' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-prev-icon{
+  height: 50px;
+  width: 50px;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fed136' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
 
 @media (max-width:1200px){
   .prev{
