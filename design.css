@@ -71,6 +71,12 @@ h4{font-size: 1.1em;text-transform: uppercase; font-weight: 400;}
 span.link i, span.link a{display: inline-block;color:#fed136;font-size: 1.1em;padding-right: 10px;}
 /*span.link p{display: inline-block;color:#fed136;font-size:0.9em; padding: 0 0 0 5px;}*/
 span.link i:first-child{padding-right: 5px;}
+span.link i{font-weight: 500;}
+
+span.link i,span.link a{transition: color 0.2s;}
+span.link a i:hover,span.link a:hover{color:#3b3c3b; text-decoration: none;}
+.cv-button div{transition: background-color 0.2s;}
+.cv-button div:hover{background-color:#3b3c3b;}
 
 .presentation{
   margin-bottom: 2em;
@@ -186,6 +192,27 @@ span.link i:first-child{padding-right: 5px;}
   width: 3em;
   display: block;
   margin: 0 auto;
+}
+
+.cv-button{
+  margin: 0 1em 2em 0;
+}
+
+.cv-button div{
+  width: 8em;
+  display: inline-block;
+  background-color:#fed136;
+  padding: 0.5em;
+}
+
+.cv-button a{
+  border:none;
+  color:white;
+  font-weight: 700;
+}
+
+.cv-button a:hover{
+  text-decoration: none;
 }
 
 ul li{
@@ -332,6 +359,14 @@ video{
 
   ul.prev a:last-child{
     padding-left: 4em;
+  }
+
+  .skills li{
+  margin: 0 1em 0 1em;
+  }
+
+  .skills img{
+  width: 2em;
   }
 }
 
