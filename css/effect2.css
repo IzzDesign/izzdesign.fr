@@ -83,7 +83,7 @@
 	line-height: 1;
 }*/
 
-.browser {
+/*.browser {
 	margin: 0 auto;
 	padding-top: 8%;
 	min-height: 400px;
@@ -93,7 +93,7 @@
 	background: #fff url(../img/browser.png) no-repeat 50% 0;
 	background-size: 100%;
 	color: #d3d3d3;
-}
+}*/
 
 .box {
 	float: left;
