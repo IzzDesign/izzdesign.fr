@@ -61,7 +61,7 @@ section {padding: 1em;}
 h1,h2,h3,h4, a{font-family:'Roboto',sans-serif;}
 
 h1{font-weight: 900;font-size: 1.6em;color: #fed136;}
-h2{font-size: 1.2em;padding-bottom: 0.2em;font-weight: 300;}
+h2{font-size: 1.2em;font-weight: 300;}
 h3{font-size: 1.5em;text-transform: uppercase;font-weight:700; letter-spacing: 0.4em;}
 h4{font-size: 1.1em;text-transform: uppercase; font-weight: 400;}
 
@@ -71,12 +71,16 @@ span.link i:first-child{padding-right: 5px;}
 span.link a{font-weight: 500;}
 
 span.link i,span.link a{transition: color 0.2s;}
-span.link a i:hover,span.link a:hover{color:#3b3c3b; text-decoration: none;}
+span.link a i:hover,span.link a:hover{color:#be2f3f; text-decoration: none;}
 .cv-button div{transition: background-color 0.2s;}
-.cv-button div:hover{background-color:#3b3c3b;}
+.cv-button div:hover{background-color:#fed136;}
 
 .presentation{
   margin-bottom: 2em;
+  background-image: url("/img/pres.png");
+  background-size: 80%;
+  background-position: 50%;
+  background-repeat: no-repeat;
 }
 
 .portfolio{
@@ -84,7 +88,7 @@ span.link a i:hover,span.link a:hover{color:#3b3c3b; text-decoration: none;}
 	overflow: hidden;
 	max-width: 100%;
 	margin-bottom: 2em;
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
 .portfolio .twoimg{
@@ -114,9 +118,9 @@ span.link a i:hover,span.link a:hover{color:#3b3c3b; text-decoration: none;}
 .portfolio img {
   max-width: 100%;
   
-  -moz-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -moz-transition: all 0.7s;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
 /*  filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
@@ -152,12 +156,13 @@ span.link a i:hover,span.link a:hover{color:#3b3c3b; text-decoration: none;}
   -ms-transform: translate(-50%, -50%);
 }
 
+.pres{margin-bottom: 1.5em;}
+
 .pres p{
   font-family: Roboto, arial, sans-serif;
   font-weight:300;
   line-height:1.9em;
   font-size: 1.1em;
-  text-align: left;
   width: 100%;
   padding-left: 0.7em;
   }
@@ -222,36 +227,27 @@ ul li{
 
 .prev{
   font-size: 0.8em;
-  padding-right: 4em;
   text-align: center;
+  left: 50%;
 }
 
 .prev.one{padding-bottom: 4em;}
 .prev.two{padding-top: 4em;}
 
-ul.prev a, .prev a{
-  text-decoration: none;
-  color:#3b3c3b;
-}
-
-ul.prev a:hover, .prev a:hover{
-  color:#fed136;
-}
-
-ul.prev a{
+.prev a{
   font-family: Roboto, arial, sans-serif;
   font-weight:300;
   line-height:1.9em;
   letter-spacing: 0.3em;
+  text-decoration: none;
+  color:#3b3c3b;
 }
 
-ul.prev a:first-child{
-  padding-right: 3em;
+.prev a:hover, .prev a:hover{
+  color:#fed136;
 }
 
-ul.prev a:last-child{
-  padding-left: 3em;
-}
+.prev i:first-child{margin-right: 0.5em;}
 
 .title{
   padding: 1em 0 3em 0;
@@ -293,17 +289,30 @@ ul.prev a:last-child{
 
 .expl p a:hover{color:#fed136;}
 
-.detail{padding: 0.2em 0 2em 0;}
-
-.detail p{
+.detail{
   font-family: Roboto, arial, sans-serif;
   font-weight:300;
   line-height:1.9em;
   font-size: 0.75em;
-  text-align: left;
+  text-align: center;
   width: 100%;
-  padding-left: 0.7em;
+  padding-top: 0.5em;
   }
+
+/*  .more{
+    border:none;
+    color:white;
+    font-weight: 500;
+    width: 8em;
+    background-color:#fed136;
+    padding: 0.5em;
+    display: block;
+    margin: 0 auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  .imhiding{display: none;}
+  .more:focus ~ .imhiding{display: block; margin: 0 auto;}*/
 
 footer{clear: both;margin-bottom: 1em;}
 
@@ -328,9 +337,8 @@ video::-moz-media-controls-fullscreen-button{
     display: none;
 }
 
-video{
-  margin-left: 0;
-  }
+.center-vid{margin: 1.5em; text-align: center;}
+.vid{width: 60%;}
 
 .carousel-control-next-icon{
   height: 20px;
@@ -345,19 +353,6 @@ video{
 }
 
 @media (max-width:1200px){
-  .prev{
-  padding-right: 0;
-  padding-left: 4em;
-  text-align: center;
-  }
-  ul.prev a:first-child{
-  padding-right: 4em;
-  }
-
-  ul.prev a:last-child{
-    padding-left: 4em;
-  }
-
   .skills li{
   margin: 0 1em 0 1em;
   }
@@ -367,19 +362,16 @@ video{
   }
 }
 
+@media (max-width:991px){
+  .vid{float: none;}
+  .center-vid{text-align: center;}
+}
+
 @media (max-width:650px){
   .prev{
   font-size: 0.6em;
   padding-right: 0;
   padding-left: 0;
-  text-align: center;
-  }
-  ul.prev a:first-child{
-  padding-right: 1em;
-  }
-
-  ul.prev a:last-child{
-    padding-left: 1em;
   }
 
   .title p{
@@ -397,7 +389,6 @@ video{
   font-size: 0.55em;
   padding-right: 0;
   padding-left: 0;
-  text-align: center;
   }
 
   span.link a{padding-right: 4px}
