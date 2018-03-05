@@ -77,10 +77,10 @@ span.link a i:hover,span.link a:hover{color:#be2f3f; text-decoration: none;}
 
 .presentation{
   margin-bottom: 2em;
-  background-image: url("/img/pres.png");
+/*  background-image: url("/img/pres.png");
   background-size: 80%;
   background-position: 50%;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;*/
 }
 
 .portfolio{
