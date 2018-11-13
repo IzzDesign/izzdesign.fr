@@ -1,0 +1,77 @@
+/*Focal*/
+.focal img{
+  width: 100%;
+}
+/*Datatopia*/
+@font-face {
+    font-family: 'avenirheavy';
+    src: url('font/aeh-webfont.woff2') format('woff2'),
+         url('font/aeh-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'avarabold';
+    src: url('font/avara-webfont.woff2') format('woff2'),
+         url('font/avara-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.datatopia{
+  background-color: black;
+  padding: 0;
+  color: white;
+  font-family: 'avenirheavy';
+  font-size: 1.3em;
+}
+
+.datatopia img{
+  margin: 0 auto;
+  margin-top:2em;
+  margin-bottom: 1em;
+}
+
+.datatopia h2{
+  font-family: 'avarabold';
+  font-size: 3em;
+}
+
+.datatopia h3{
+  font-family: 'avenirheavy';
+  font-size: 0.8em;
+  margin: 2em 0 2em 0;
+  text-transform: none;
+  font-weight: normal;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.datatopia p{
+  margin: 1em 0 2em 0;
+  line-height: 1.2em;
+}
+
+.datatopia .story p{
+  padding-left: 1em;
+}
+
+.datatopia span{
+  font-size: 3em;
+}
+
+.datatopia .normal{margin-bottom: 2em;}
+.datatopia .normal span{
+  font-size: 1em;
+  padding: 1em 1em 1em 0;
+}
+
+.datatopia span.avara{
+  font-family: 'avarabold';
+  margin-right: 1em;
+}
+
+.datatopia a{
+  color: white;
+  margin-bottom: 2em;
+}
