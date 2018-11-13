@@ -2,6 +2,17 @@
 .focal img{
   width: 100%;
 }
+
+/*Fabulous*/
+.fabulous{background-color: #1D1D28;}
+.fabulous img{
+  width: 100%;
+}
+
+.fabulous img.little{
+  width: 40%;
+}
+
 /*Datatopia*/
 @font-face {
     font-family: 'avenirheavy';
