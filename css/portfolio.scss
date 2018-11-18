@@ -1,3 +1,6 @@
+---
+---
+
 /*Focal*/
 .focal img{
   width: 100%;
@@ -35,20 +38,16 @@
   color: white;
   font-family: 'avenirheavy';
   font-size: 1.3em;
-}
-
-.datatopia img{
+  img{
   margin: 0 auto;
   margin-top:2em;
   margin-bottom: 1em;
-}
-
-.datatopia h2{
+  }
+  h2{
   font-family: 'avarabold';
   font-size: 3em;
-}
-
-.datatopia h3{
+  }
+  h3{
   font-family: 'avenirheavy';
   font-size: 0.8em;
   margin: 2em 0 2em 0;
@@ -56,33 +55,30 @@
   font-weight: normal;
   letter-spacing: 0;
   text-align: left;
-}
-
-.datatopia p{
+  }
+  p{
   margin: 1em 0 2em 0;
   line-height: 1.2em;
-}
-
-.datatopia .story p{
-  padding-left: 1em;
-}
-
-.datatopia span{
-  font-size: 3em;
-}
-
-.datatopia .normal{margin-bottom: 2em;}
-.datatopia .normal span{
-  font-size: 1em;
-  padding: 1em 1em 1em 0;
-}
-
-.datatopia span.avara{
-  font-family: 'avarabold';
-  margin-right: 1em;
-}
-
-.datatopia a{
+  }
+  a{
   color: white;
   margin-bottom: 2em;
+  }
+  .story p{
+  padding-left: 1em;
+  }
+  span{
+  font-size: 3em;
+  }
+  .normal{
+    margin-bottom: 2em;
+    span{
+      font-size: 1em;
+      padding: 1em 1em 1em 0;
+      .avara{
+      font-family: 'avarabold';
+      margin-right: 1em;
+      }
+    }
+  }
 }
