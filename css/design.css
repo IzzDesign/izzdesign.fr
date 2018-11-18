@@ -66,7 +66,6 @@ h3{font-size: 1.5em;text-transform: uppercase;font-weight:700; letter-spacing: 0
 h4{font-size: 1.1em;text-transform: uppercase; font-weight: 400;}
 
 span.link i, span.link a{display: inline-block;color:#fed136;font-size: 1.1em;padding-right: 10px;}
-/*span.link p{display: inline-block;color:#fed136;font-size:0.9em; padding: 0 0 0 5px;}*/
 span.link i:first-child{padding-right: 5px;}
 span.link a{font-weight: 500;}
 
@@ -77,10 +76,6 @@ span.link a i:hover,span.link a:hover{color:#be2f3f; text-decoration: none;}
 
 .presentation{
   margin-bottom: 2em;
-/*  background-image: url("/img/pres.png");
-  background-size: 80%;
-  background-position: 50%;
-  background-repeat: no-repeat;*/
 }
 
 .portfolio{
@@ -121,21 +116,12 @@ span.link a i:hover,span.link a:hover{color:#be2f3f; text-decoration: none;}
   -moz-transition: all 0.7s;
   -webkit-transition: all 0.7s;
   transition: all 0.7s;
-/*  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  -o-filter: grayscale(100%);*/
 }
 
 .portfolio:hover img {
   -moz-transform: scale(1.05);
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
-/*  filter: none;
-  -moz-filter: none;
-  -ms-filter: none;
-  -o-filter: none;*/
 }
 
 .portfolio:hover{
@@ -298,21 +284,6 @@ ul li{
   width: 100%;
   padding-top: 0.5em;
   }
-
-/*  .more{
-    border:none;
-    color:white;
-    font-weight: 500;
-    width: 8em;
-    background-color:#fed136;
-    padding: 0.5em;
-    display: block;
-    margin: 0 auto;
-    margin-top: 2em;
-    margin-bottom: 2em;
-  }
-  .imhiding{display: none;}
-  .more:focus ~ .imhiding{display: block; margin: 0 auto;}*/
 
 footer{clear: both;margin-bottom: 1em;}
 
