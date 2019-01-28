@@ -2,7 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
+--
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -74,8 +74,18 @@ span.link a i:hover,span.link a:hover{color:#be2f3f; text-decoration: none;}
 .cv-button div{transition: background-color 0.2s;}
 .cv-button div:hover{background-color:#fed136;}
 
-.presentation{
-  margin-bottom: 2em;
+.presentation span{
+  font-family:'Roboto',sans-serif;
+  font-weight: 900;
+  font-size: 2.7em;
+  background-color: #fed136;
+  color: #fff;
+  width: auto;
+  display: inline-block;
+  margin: 0.2em;
+  position: relative;
+  top: 2em;
+  text-align: left;
 }
 
 .portfolio{
@@ -83,12 +93,33 @@ span.link a i:hover,span.link a:hover{color:#be2f3f; text-decoration: none;}
 	overflow: hidden;
 	max-width: 100%;
 	margin-bottom: 2em;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .portfolio .twoimg{
 	margin-bottom: 0;
 	padding: 0;
+}
+
+.featurette{
+  margin-bottom: 1em;
+  margin-top: 2em;
+  text-align: center;
+}
+
+.featurette-heading {
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 1;
+  letter-spacing: -.05rem;
+  padding-bottom: 0;
+  text-align: left;
+}
+
+.featurette p{
+  margin-bottom: 2em;
+  font-weight: 100;
+  text-align: left;
 }
 
 .overlay {
@@ -108,6 +139,7 @@ span.link a i:hover,span.link a:hover{color:#be2f3f; text-decoration: none;}
   padding-top: 10px;
   letter-spacing: 5px;
   font-size: 1.2em;
+  text-align: center;
 }
 
 .portfolio img {
@@ -142,17 +174,6 @@ span.link a i:hover,span.link a:hover{color:#be2f3f; text-decoration: none;}
   -ms-transform: translate(-50%, -50%);
 }
 
-.pres{margin-bottom: 1.5em;}
-
-.pres p{
-  font-family: Roboto, arial, sans-serif;
-  font-weight:300;
-  line-height:1.9em;
-  font-size: 1.1em;
-  width: 100%;
-  padding-left: 0.7em;
-  }
-
   span.talk{
     text-align: left;
     float: left;
@@ -177,7 +198,7 @@ span.link a i:hover,span.link a:hover{color:#be2f3f; text-decoration: none;}
 }
 
 .skills img{
-  width: 3em;
+  width: 1.8em;
   display: block;
   margin: 0 auto;
 }
