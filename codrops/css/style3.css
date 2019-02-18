@@ -48,47 +48,47 @@
 	position: relative;
 }
 .sp-left span.sp-top {
-	-webkit-animation: slideLeft 3.3s ease-in 0.01s;
-	-moz-animation: slideLeft 3.3s ease-in 0.01s;
-	-ms-animation: slideLeft 3.3s ease-in 0.01s;
-	animation: slideLeft 3.3s ease-in 0.01s;
+	-webkit-animation: slideLeft 1s ease-in 3s backwards;
+	-moz-animation: slideLeft 1s ease-in 3s backwards;
+	-ms-animation: slideLeft 1s ease-in 3s backwards;
+	animation: slideLeft 1s ease-in 3s backwards;
 }
 .sp-left span.sp-mid {
-	-webkit-animation: slideLeft 4s ease-in 0.02s;
-	-moz-animation: slideLeft 4s ease-in 0.02s;
-	-ms-animation: slideLeft 4s ease-in 0.02s;
-	animation: slideLeft 4s ease-in 0.02s;
+	-webkit-animation: slideLeft 1s ease-in 3.5s backwards;
+	-moz-animation: slideLeft 1s ease-in 3.5s backwards;
+	-ms-animation: slideLeft 1s ease-in 3.5s backwards;
+	animation: slideLeft 1s ease-in 3.5s backwards;
 }
 .sp-right span {
 	text-align: left;
 }
-.sp-right span.sp-top {
-	-webkit-animation: slideRight 4.5s ease-in 0.1s;
-	-moz-animation: slideRight 4.5s ease-in 0.1s;
-	-ms-animation: slideRight 4.5s ease-in 0.1s;
-	animation: slideRight 4.5s ease-in 0.1s;
+.sp-right span.sp-top {4.6
+	-webkit-animation: slideRight 1s ease-in 3.8s backwards;
+	-moz-animation: slideRight 1s ease-in 3.8s backwards;
+	-ms-animation: slideRight 1s ease-in 3.8s backwards;
+	animation: slideRight 1s ease-in 3.8s backwards;
 }
 .sp-right span.sp-mid {
-	-webkit-animation: slideRight 5s ease-in 0.01s;
-	-moz-animation: slideRight 5s ease-in 0.01s;
-	-ms-animation: slideRight 5s ease-in 0.01s;
-	animation: slideRight 5s ease-in 0.01s;
+	-webkit-animation: slideRight 1s linear 4.2s backwards;
+	-moz-animation: slideRight 1s linear 4.2s backwards;
+	-ms-animation: slideRight 1s linear 4.2s backwards;
+	animation: slideRight 1s linear 4.2s backwards;
 }
 .sp-wrap i {
 	position: absolute;
 	width: 60px;
 }
 .sp-full {
-	position: relative;
-	max-width: 20%;
+	display: inline-block;
 	font-size: 20px;
-	-webkit-animation: fadeIn 1s linear 6s backwards;
-	-moz-animation: fadeIn 1s linear 6s backwards;
-	-ms-animation: fadeIn 1s linear 6s backwards;
-	animation: fadeIn 1s linear 6s backwards;
+	margin-top: 1em;
+	-webkit-animation: fadeIn 1s linear 1s backwards;
+	-moz-animation: fadeIn 1s linear 1s backwards;
+	-ms-animation: fadeIn 1s linear 1s backwards;
+	animation: fadeIn 1s linear 1s backwards;
 }
 .sp-full a {
-	background: #000;
+	background: #fed136;
 	color: #fff;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
@@ -96,16 +96,12 @@
 	padding: 10px 40px;
 	display: inline-block;
 	font-size: 20px;
-	-webkit-animation: zoomIn 0.7s ease-in-out 7s backwards;
-	-moz-animation: zoomIn 0.7s ease-in-out 7s backwards;
-	-ms-animation: zoomIn 0.7s ease-in-out 7s backwards;
-	animation: zoomIn 0.7s ease-in-out 7s backwards;
+	-webkit-animation: zoomIn 1s ease-in-out 4.8s backwards;
+	-moz-animation: zoomIn 1s ease-in-out 4.8s backwards;
+	-ms-animation: zoomIn 1s ease-in-out 4.8s backwards;
+	animation: zoomIn 1s ease-in-out 4.8s backwards;
 }
-.sp-full h2 {
-	float: left;
-	text-align: right;
-}
-.sp-full a:hover {
+.sp-full h2 {	float: left;	text-align: right;}.sp-full a:hover {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
 	filter: alpha(opacity=80);
 	opacity: 0.8;

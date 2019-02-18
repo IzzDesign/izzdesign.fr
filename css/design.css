@@ -56,7 +56,9 @@ table {
 
 body{background: #fff;font-family: Roboto, arial, sans-serif; color:#3b3c3b;}
 section {padding: 1em;}
+img{width: 100%;}
 .demo-2 { background: #fff; }
+.margin{margin-top: 1.5em;}
 
 h1,h2,h3,h4, a{font-family:'Roboto',sans-serif;}
 
@@ -124,7 +126,6 @@ span.link a i:hover,span.link a:hover{color:#be2f3f; text-decoration: none;}
 
 .portfolio img {
   width: 100%;
-
   -moz-transition: all 0.7s;
   -webkit-transition: all 0.7s;
   transition: all 0.7s;
