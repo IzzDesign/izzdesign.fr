@@ -1,37 +1,7 @@
 ---
 
 ---
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>IzzDesign</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="author" content="Isabelle Dulin Portfolio">
-
-  <link rel="shortcut icon" href="img/favicon.ico">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/design.css">
-  <link rel="stylesheet" type="text/css" href="codrops/css/style3.css">
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <!-- Loader -->
-  <link rel="stylesheet" type="text/css" href="css/effect2.css" />
-  <script src="js/modernizr.custom.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108381903-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-108381903-1');
-  </script>
-
-</head>
+{% include head.html %}
 
   <body class="demo-2">
     <div id="ip-container" class="ip-container">
@@ -53,45 +23,45 @@
   <div class="row content">
     <div class="col-lg-8 offset-lg-2">
       <div class="row section">
-        <div class="col-md-6">
-          <h2>
+        <div class="col-lg-6 col-md-12 intro">
+          <p>
             <span>Graphiste digitale, webdesigner et illustratrice</span> freelance sur Lyon, je m’occupe de vos supports de communications.
-          </h2>
-          <h2>
+          </p>
+          <p>
             Je réalise vos <span>sites web</span> du design à l’intégration. Je m’occupe également de produire visuels et vidéos pour faire vivre vos <span>réseaux sociaux.</span>
-          </h2>
-          <h2>
+          </p>
+          <p>
             <span>Autrice et illustratrice</span> depuis deux ans d’un roman graphique, je suis disponible pour tout travaux d’illustration.
-          </h2>
+          </p>
         </div>
-        <div class="col-md-4">
+        <div class="col-lg-4 col-md-12 text-center section">
           {% include instagram.html %}
         </div>
       </div>
 
       <div class="row articles text-center">
         <div class="col-md-4">
-          <a href="">
+          <a href="/portfolio/projet-web.html">
             <img src="img/index-portfolio/web.svg">
-            <h4>Vous souhaitez faire votre site web</h4>
+            <h3>Vous souhaitez faire votre site web</h3>
           </a>
         </div>
         <div class="col-md-4">
-          <a href="">
+          <a href="/portfolio/projet-reseaux.html">
             <img src="img/index-portfolio/seo.svg">
-            <h4>Vous souhaitez des visuels pour vos réseaux sociaux</h4>
+            <h3>Vous souhaitez des visuels pour vos réseaux sociaux</h3>
           </a>
         </div>
         <div class="col-md-4">
-          <a href="">
+          <a href="/portfolio/projet-illu.html">
             <img src="img/index-portfolio/drawing.svg">
-          <h4>Vous avez un projet d’illustration</h4>
+          <h3>Vous avez un projet d’illustration</h3>
           </a>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-lg-2 offset-lg-5">
+        <div class="col-lg-4 offset-lg-4 text-center">
           <a href="/portfolio/portfolio-index.html" class="button">Portfolio</a>
         </div>
       </div>
@@ -102,14 +72,4 @@
 
   {% include footer.html %}
 
-  <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
-  <script src="js/classie.js"></script>
-  <script src="js/pathLoader.js"></script>
-  <script src="js/main.js"></script>
-  <script type="text/javascript">
-    $(function () {$('[data-toggle="tooltip"]').tooltip()})
-  </script>
-</body>
-</html>
+  {% include script.html %}
