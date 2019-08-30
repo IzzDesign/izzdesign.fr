@@ -43,6 +43,7 @@
   margin-top:2em;
   margin-bottom: 1em;
   }
+  img.little{width:30%;}
   h2{
   font-family: 'avarabold';
   font-size: 3em;
@@ -67,18 +68,12 @@
   .story p{
   padding-left: 1em;
   }
+  .avara{margin-bottom: 2em;}
   span{
-  font-size: 3em;
+    font-size: 1.5em;
   }
   .normal{
     margin-bottom: 2em;
-    span{
-      font-size: 1em;
-      padding: 1em 1em 1em 0;
-      .avara{
-      font-family: 'avarabold';
-      margin-right: 1em;
-      }
-    }
+    span{font-size: 1em;display: inline-block;}
   }
 }
