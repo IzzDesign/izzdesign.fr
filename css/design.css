@@ -99,21 +99,21 @@ h3{
     text-decoration: none;
   }
 .article h3{margin-top: 2em;margin-bottom: 2em;}
-.articles h3{font-size: 1.5em;}
+.articles h3{font-size: 1.3em;}
 h4{margin-top:2em;font-size: 1.5em; font-weight: 400; text-align: left;text-transform: uppercase;}
 .article h4{text-align: left;}
 a h4{width: 60%;margin: 0 auto;}
 
 a{color: #4F4E4D;}
-a:hover{text-decoration: none;color: #52BFD0;}
+a:hover{text-decoration: none;color:#4F4E4D;}
 span.link i, span.link a{display: inline-block;color:#52BFD0;font-size: 1.1em;padding-right: 10px;}
 span.link i:first-child{padding-right: 5px;}
 span.link a{font-weight: 500;}
 
-span.link i,span.link a{
+span.link i,span.link a, a.anim{
   position: relative;
 }
-span.link a i:hover,span.link a:hover{
+span.link a i:hover,span.link a:hover,a.anim:hover{
   text-decoration: none;
   animation-name: hover;
   animation-duration: 0.2s;
@@ -162,35 +162,6 @@ a.display:hover{
 
 .info{width: 100%;}
 .info2{width: 80%;}
-
-  span.talk{
-    text-align: left;
-    float: left;
-    color: #52BFD0;
-    padding: 0.4em 1em 0 0;
-  }
-
-.skills{
-  text-align: center;
-  font-size: 1em;
-  font-weight: 300;
-  line-height: 3em;
-  margin-bottom: 2em;
-}
-
-.skills ul{
-  margin: 0 auto;
-}
-
-.skills li{
-  margin: 0 2em 0 2em;
-}
-
-.skills img{
-  width: 3em;
-  display: block;
-  margin: 0 auto;
-}
 
 .articles img{
   margin: 1em;
