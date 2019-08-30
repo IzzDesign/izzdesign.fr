@@ -49,7 +49,7 @@
 }
 
 .ip-header .ip-logo svg path {
-	fill: #fed136;
+	fill: #52BFD0;
 }
 
 .ip-header .ip-loader svg path {
@@ -64,7 +64,7 @@
 .ip-header .ip-loader svg path.ip-loader-circle {
 	-webkit-transition: stroke-dashoffset 0.2s;
 	transition: stroke-dashoffset 0.2s;
-	stroke: #fed136;
+	stroke: #52BFD0;
 }
 
 /* Content */
@@ -107,7 +107,7 @@
 	font-family: 'Blokk', Arial, sans-serif;
 }
 
-[class^="icon-"]::before, 
+[class^="icon-"]::before,
 [class*=" icon-"]::before {
 	display: block;
 	margin-bottom: 0.5em;
@@ -212,7 +212,7 @@
 .loaded .ip-logo svg path {
 	-webkit-transition: all 0.5s ease 0.3s;
 	transition: all 0.5s ease 0.3s;
-	fill: #fed136;
+	fill: #52BFD0;
 }
 
 /* Header animation when loading finishes */
