@@ -1,136 +1,110 @@
 ---
-
+layout: default
 ---
-{% include head.html %}
 
-  <body class="demo-2">
-    <div id="ip-container" class="ip-container">
-      <!-- initial header -->
-      <header class="ip-header">
-        {% include logo-loader.html %}
-      </header>
-    </div>
-
-<section class="ip-main">
-  <div class="container-fluid">
-    <div class="row content">
-      <div class="col-lg-8 offset-lg-2">
-        <div class="row section">
-          <div class="col-lg-4 col-md-12">
-            <img src="img/photo.png">
-            {% include reseaux.html %}
+<div class="container">
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="row cycliques">
+          <div class="col-lg-7">
+            <h2>Cycliques</h2>
+            <p class="sub">Site web, charte graphique, Logotype et illustrations</p>
+            <p>Sed ut perspiciatis unde omnis iste natus error si voluptatem accusantium dolore laudantium, totama rem aperiame inventore verita et quasi architecto beatae vitae dicta sunt explicab. Nemo enim ipsam volup tateman quiave. Aspernat fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem seq nesciunt.</p>
+            <a href="">voir le projet</a>
+            <a href="">voir le site</a>
           </div>
-          <div class="col-lg-8 col-md-12">
-            <p>Je suis Isabelle Dulin, freelance sur la région lyonnaise. Je suis : </p>
-            <h3>Webdesigner</h3>
-            <p>Je réalise vos sites web du design à l’intégration.</p>
-            <h3>Graphiste digital</h3>
-            <p>Je m’occupe également de produire visuels et vidéos pour faire vivre vos réseaux sociaux. </p>
-            <h3>Illustratice</h3>
-            <p>Autrice et illustratrice depuis deux ans d’un roman graphique, je suis disponible pour tout travaux d’illustration.</p>
-            {% include instagram.html %}
+          <div class="col-lg-5 absolute">
+            <img src="/img/cycliques.png" class="d-block w-100 img-presentation" alt="...">
           </div>
+          <div class="behind"></div>
         </div>
-        <div class="row section items round">
-          <div class="col-lg-4 offset-lg-8">
-            <h2>Webdesign</h2>
+      </div>
+      <div class="carousel-item">
+        <div class="row focal">
+          <div class="col-lg-7">
+            <h2>Focal</h2>
+            <p class="sub">Site web, charte graphique, Logotype et illustrations</p>
+            <p>Sed ut perspiciatis unde omnis iste natus error si voluptatem accusantium dolore laudantium, totama rem aperiame inventore verita et quasi architecto beatae vitae dicta sunt explicab. Nemo enim ipsam volup tateman quiave. Aspernat fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem seq nesciunt.</p>
+            <a href="">voir le projet</a>
           </div>
-          <div class="row">
-            <div class="col-lg">
-              <a href="/portfolio/focal.html">
-                <img src="img/cycliques.png">
-                <h4>Cycliques</h4>
-              </a>
-            </div>
-            <div class="col-lg">
-              <a href="/portfolio/hysteresis.html">
-                <img src="img/hysteresis.png">
-                <h4>Hystérésis</h4>
-              </a>
-            </div>
-            <div class="col-lg">
-              <a href="/portfolio/fabulous.html">
-                <img src="img/fabulous.png">
-                <h4>Datatopia</h4>
-              </a>
-            </div>
+          <div class="col-lg-5 absolute">
+            <img src="/img/focal.png" class="d-block w-100 img-presentation" alt="...">
           </div>
+          <div class="behind"></div>
         </div>
-        <div class="row section items">
-          <div class="col-lg">
+      </div>
+      <div class="carousel-item">
+        <div class="row endonymous">
+          <div class="col-lg-7">
+            <h2>Endonymous</h2>
+            <p class="sub">Site web, charte graphique, Logotype et illustrations</p>
+            <p>Sed ut perspiciatis unde omnis iste natus error si voluptatem accusantium dolore laudantium, totama rem aperiame inventore verita et quasi architecto beatae vitae dicta sunt explicab. Nemo enim ipsam volup tateman quiave. Aspernat fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem seq nesciunt.</p>
+            <a href="">voir le projet</a>
+          </div>
+          <div class="col-lg-5 absolute">
+            <img src="/img/endonymous.png" class="d-block w-100 img-presentation" alt="...">
+          </div>
+          <div class="behind"></div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row datato">
+          <div class="col-lg-7">
+            <h2>Datatopia</h2>
+            <p class="sub">Site web, charte graphique, Logotype et illustrations</p>
+            <p>Sed ut perspiciatis unde omnis iste natus error si voluptatem accusantium dolore laudantium, totama rem aperiame inventore verita et quasi architecto beatae vitae dicta sunt explicab. Nemo enim ipsam volup tateman quiave. Aspernat fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem seq nesciunt.</p>
+            <a href="">voir le projet</a>
+          </div>
+          <div class="col-lg-5 absolute">
+            <img src="/img/datatopia.png" class="d-block w-100 img-presentation" alt="...">
+          </div>
+          <div class="behind"></div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row illustrations">
+          <div class="col-lg-7">
             <h2>Illustrations</h2>
+            <p>Sed ut perspiciatis unde omnis iste natus error si voluptatem accusantium dolore laudantium, totama rem aperiame inventore verita et quasi architecto beatae vitae dicta sunt explicab. Nemo enim ipsam volup tateman quiave. Aspernat fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem seq nesciunt.</p>
+            <a href="">voir le projet</a>
           </div>
-          <div class="col-lg-12">
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active" data-interval="800">
-                  <img class="d-block w-100" src="img/cycliques-illus.png" alt="First slide">
-                </div>
-                <div class="carousel-item" data-interval="800">
-                  <img class="d-block w-100" src="img/filles-illus.png" alt="Third slide">
-                </div>
-                <div class="carousel-item" data-interval="800">
-                  <img class="d-block w-100" src="img/hysteresis-icones.png" alt="Second slide">
-                </div>
-                <div class="carousel-item" data-interval="800">
-                  <img class="d-block w-100" src="img/cycliques-icones.png" alt="Third slide">
-                </div>
-                <div class="carousel-item" data-interval="800">
-                  <img class="d-block w-100" src="img/hysteresis-illus.png" alt="Second slide">
-                </div>
-                <div class="carousel-item" data-interval="800">
-                  <img class="d-block w-100" src="img/music-portraits.png" alt="Second slide">
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
+          <div class="col-lg-5 absolute">
+            <img src="/img/illustrations.png" class="d-block w-100 img-presentation" alt="...">
           </div>
+          <div class="behind"></div>
         </div>
-        <div class="row section items round">
-          <div class="col-lg-4 offset-lg-8">
-            <h2>Graphisme</h2>
+      </div>
+      <div class="carousel-item">
+        <div class="row m-t">
+          <div class="col-lg-7">
+            <h2>Modes&Travaux</h2>
+            <p class="sub">Site web, charte graphique, Logotype et illustrations</p>
+            <p>Sed ut perspiciatis unde omnis iste natus error si voluptatem accusantium dolore laudantium, totama rem aperiame inventore verita et quasi architecto beatae vitae dicta sunt explicab. Nemo enim ipsam volup tateman quiave. Aspernat fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem seq nesciunt.</p>
+            <a href="">voir le projet</a>
           </div>
-          <div class="row">
-            <div class="col-lg">
-              <a href="/portfolio/focal.html">
-                <img src="img/focal.png">
-                <h4>Focal</h4>
-              </a>
-            </div>
-            <div class="col-lg">
-              <a href="/portfolio/modesettravaux.html">
-                <img src="img/m-t.png">
-                <h4>Modes et Travaux</h4>
-              </a>
-            </div>
-            <div class="col-lg">
-              <a href="/portfolio/fabulous.html">
-                <img src="img/fabulous.png">
-                <h4>Fabulous</h4>
-              </a>
-            </div>
+          <div class="col-lg-5 absolute">
+            <img src="/img/m-t.png" class="d-block w-100 img-presentation" alt="...">
           </div>
-        </div>
-        <div class="row section items">
-          <div class="col-lg">
-            <h2>Roman graphique</h2>
-          </div>
-          <div class="col-lg-12">
-            <a href="https://endonymous.fr"><img src="img/endonymous.png"></a>
-          </div>
+          <div class="behind"></div>
         </div>
       </div>
     </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
   </div>
-</section>
-
-  {% include footer.html %}
-
-  {% include script.html %}
+</div>

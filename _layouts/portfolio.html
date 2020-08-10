@@ -26,29 +26,20 @@
 </head>
 
 <body>
-  <section class="ip-main">
-    <div class="container-fluid text-center anim">
-      <div class="row">
-        <div class="col-lg-12 logo">
-          <a href="../index.html"><img src="../img/logo_izzdesign.svg"></a>
-        </div>
-      </div>
-
-      <div class="row">
-        {% include reseaux.html %}
-      </div>
+  
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12 logo">
+      <a href="../index.html"><img src="../img/logo_izzdesign.svg"></a>
     </div>
+  </div>
 
-    {{content}}
-  </section>
+  <div class="row">
+    {% include reseaux.html %}
+  </div>
+</div>
+
+{{content}}
 
   {% include footer.html %}
-
-    <script src="../js/classie.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-      $(function () {$('[data-toggle="tooltip"]').tooltip()})
-    </script>
-  </body>
-</html>
+  {% include script.html %}
