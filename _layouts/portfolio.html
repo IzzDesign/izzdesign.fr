@@ -1,45 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>{{ page.title }}{% if page.title %} | {% endif %}IzzDesign</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="author" content="Isabelle Dulin Portfolio">
+---
+layout: default
+---
 
-  <link rel="shortcut icon" href="../img/favicon.ico">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-
-  <link rel="stylesheet" type="text/css" href="../css/design.css">
-  <link rel="stylesheet" type="text/css" href="../css/portfolio.css">
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108381903-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-108381903-1');
-  </script>
-</head>
-
-<body>
-  
 <div class="container">
-  <div class="row">
-    <div class="col-lg-12 logo">
-      <a href="../index.html"><img src="../img/logo_izzdesign.svg"></a>
-    </div>
-  </div>
-
-  <div class="row">
-    {% include reseaux.html %}
-  </div>
+  {{content}}
 </div>
-
-{{content}}
-
-  {% include footer.html %}
-  {% include script.html %}
