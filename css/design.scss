@@ -28,6 +28,7 @@ h2{
     visibility: hidden;
     animation: h2appear 0.8s cubic-bezier(0,1,.65,1.15) 0.5s forwards;
   }
+a:hover{text-decoration: none;}
 a.movelink{
     font-size: 1.7em;
     font-weight: 300;
@@ -38,14 +39,25 @@ a.movelink{
     right: 0px;
     animation: h2appear 0.8s cubic-bezier(0,1,.65,1.15) 0.5s forwards;
     visibility: hidden;
+    transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 1.5s;
   }
-  a.projets{
-    font-size: 2.5em;
-    font-weight: 300;
-    padding: 0.2em 0.5em;
-    color: #fff;
-    font-family: $title;
-  }
+
+.cycliques a.movelink:hover{color: #E3E3E3; background-color: #441151;}
+.focal a.movelink:hover{color: #E3E3E3; background-color: #99CFDD;}
+.endonymous a.movelink:hover{color: #E3E3E3; background-color: #E2BD81;}
+.datato a.movelink:hover{color: #000; background-color: #E3E3E3;}
+.illustrations a.movelink:hover{color: #E3E3E3; background-color: $blue;}
+.m-t a.movelink:hover{color: #E3E3E3; background-color: #DC493A;}
+
+a.projets{
+  font-size: 2.5em;
+  font-weight: 300;
+  padding: 0.2em 0.5em;
+  color: #fff;
+  font-family: $title;
+  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 1.5s;
+  &:hover{margin-left: 3px;}
+}
 
 h3{font-size: 2.5em;}
 h4{font-size: 2em; color: $title-section;}
@@ -198,13 +210,8 @@ video::-moz-media-controls-fullscreen-button{
 }
 
 @keyframes h2appear{
-  0%    {transform: translateX(-200px);; visibility: hidden;}
+  0%    {transform: translateX(-200px); visibility: hidden;}
   100%  {transform: translateX(0px); visibility:visible;}
-}
-
-@keyframes ahover{
-  0% {text-decoration: none;}
-  100%  { text-decoration:underline overline; }
 }
 
 @media (max-width: 991px) {
