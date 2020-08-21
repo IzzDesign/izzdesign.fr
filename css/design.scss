@@ -133,7 +133,6 @@ p.nice{font-family: $title;color: $blue;font-size: 1.8em;transform: rotate(-5deg
 .photo{
   visibility: hidden;
   animation: h2appear 0.8s cubic-bezier(0,1,.65,1.15) 0.5s forwards;
-  min-height: 70vh;
 }
 .padding{padding-top: 1em;}
 footer{clear: both;margin-bottom: 1em; margin-top: auto;}
@@ -214,17 +213,34 @@ video::-moz-media-controls-fullscreen-button{
   100%  {transform: translateX(0px); visibility:visible;}
 }
 
+@media (max-width: 1199px) and (min-width: 991px) {
+  span.link i, span.link a{
+    font-size: 1em;
+    padding-right:5px;
+  }
+
+}
 @media (max-width: 991px) {
   .absolute{
     position: inherit;
   }
+  .carousel-control-prev{left: -70px;}
+  .carousel-control-next{right: -50px;}
+  .carousel-item h2{margin-top: 0.7em;}
   .behind{height: 20px;}
-  @keyframes imgappear{
-   0%    {width: 0px; visibility: hidden;}
-   100%  {width: 50%; visibility: visible;}
-  }
+  .img-presentation{visibility: visible;}
   @keyframes blockappear{
    0%    {width: 0px; height: 0px;}
    100%  {width: 500px; height: 200px;}
   }
+}
+
+@media (max-width: 600px) {
+  .carousel-control-prev{left: 0px;bottom: auto;}
+  .carousel-control-next{right: 0px; bottom: auto;}
+  .prev{display: none;}
+}
+
+@media (max-width: 480px) {
+  .behind, .img-presentation{display: none !important;}
 }
