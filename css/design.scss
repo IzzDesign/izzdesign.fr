@@ -42,7 +42,7 @@ a.movelink{
     transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 1.5s;
   }
 
-.cycliques a.movelink:hover{color: #E3E3E3; background-color: #441151;}
+.endobujo a.movelink:hover{color: #E3E3E3; background-color: #441151;}
 .focal a.movelink:hover{color: #E3E3E3; background-color: #99CFDD;}
 .endonymous a.movelink:hover{color: #E3E3E3; background-color: #E2BD81;}
 .datato a.movelink:hover{color: #000; background-color: #E3E3E3;}
@@ -116,7 +116,7 @@ a.display:hover{
 .portfolio img{visibility: hidden; animation:imgappear 0.8s cubic-bezier(0,1,.65,1) 0.5s forwards;}
 .absolute{position: absolute;z-index: 2; right: 0;bottom: 0;}
 .behind{display:block; width:0px; height: 0px; position: absolute; right: 45px; z-index: 1;bottom: 0;}
-.cycliques{h2,h3,h4,a{color: #441151;}.behind,.socle{background-color: #441151;}}
+.endobujo{h2,h3,h4,a{color: #441151;}.behind,.socle{background-color: #441151;}}
 .focal{h2,h3,h4,a{color: #99CFDD;}.behind,.socle{background-color: #99CFDD;}}
 .endonymous{h2,h3,h4,a{color: #E2BD81;}.behind,.socle{background-color: #E2BD81;}}
 .datato{h2,h3,h4,a{color: #000;}.behind,.socle{background-color: #E3E3E3;}}
