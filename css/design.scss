@@ -9,10 +9,10 @@
     font-style: normal;
 }
 
-$blue:#53BFD0;
+$black: #000;
 $title-section: #3b3c3b;
 $text: #4F4E4D;
-$font: 'Open Sans', Arial, sans-serif;
+$font: 'Raleway', Arial, sans-serif;
 $title: 'Rushing Nightshade';
 
 * {
@@ -22,7 +22,7 @@ $title: 'Rushing Nightshade';
 }
 
 body{display:flex; flex-direction: column; height: 100vh; background: #fff;font-family:$font; color:$text;display: flex; flex-direction: column;}
-h1,h2,h3,h4{font-family:$title; color: $blue;margin-top: 1em;}
+h1,h2,h3,h4{font-family:$title; color: $black;margin-top: 1em;}
 h2{font-size: 3.5em; position: relative; bottom: 20px;}
 h2{
     visibility: hidden;
@@ -46,7 +46,7 @@ a.movelink{
 .focal a.movelink:hover{color: #E3E3E3; background-color: #99CFDD;}
 .endonymous a.movelink:hover{color: #E3E3E3; background-color: #E2BD81;}
 .datato a.movelink:hover{color: #000; background-color: #E3E3E3;}
-.illustrations a.movelink:hover{color: #E3E3E3; background-color: $blue;}
+.illustrations a.movelink:hover{color: #E3E3E3; background-color: #53BFD0;}
 .m-t a.movelink:hover{color: #E3E3E3; background-color: #DC493A;}
 
 a.projets{
@@ -63,9 +63,9 @@ h3{font-size: 2.5em;}
 h4{font-size: 2em; color: $title-section;}
 p.sub{text-transform: uppercase;font-weight: 600;font-size: 1.2em;}
 
-a{color: $blue; font-family: $font; font-size: 1.5em; font-weight: 600;}
-/*a:hover{text-decoration: none;color:$blue;}*/
-span.link i, span.link a{display: inline-block;color:#52BFD0;font-size: 1.2em;padding-right: 10px;margin-top: 0.5em;}
+a{color: $black; font-family: $font; font-size: 1.5em; font-weight: 600;}
+/*a:hover{text-decoration: none;color:$black;}*/
+span.link i, span.link a{display: inline-block;color:$title-section;font-size: 1.2em;padding-right: 10px;margin-top: 0.5em;}
 span.link i:first-child{padding-right: 5px;}
 span.link a{font-weight: 500;}
 span.link i,span.link a, a.anim{position: relative;}
@@ -73,6 +73,8 @@ span.link a i:hover,span.link a:hover,a.anim:hover{
   text-decoration: none;
   animation: hover 0.1s cubic-bezier(0,1,.65,1.15) 0s forwards;
 }
+
+.colum{display: flex;flex-direction: column;}
 
 .bg-light{background-color: #FAFAFA;}
 .items{justify-content: center;}
@@ -85,14 +87,24 @@ a.display:hover{
   background-color: #AD310B;
 }
 
-.navbar-brand{display: block;img{width: 80px;}}
+.text p{font-size: 1.2em;font-weight: 400;}
+p.important{
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  font-size: 1.3em;
+}
+
+.navbar-brand{display: block; margin:0 auto; img{width: 200px;}}
+nav{margin-bottom: 1.5em;}
 .navbar-light .navbar-nav .nav-link, .dropdown-item{
   font-family: $font;
   font-weight: 300;
   font-size: 1.2em;
   letter-spacing: 0.07em;
-  margin-right:1em; 
+  margin-right:1em;
 }
+.navbar-collapse{justify-content: center;}
 .carousel{margin: 2em 0;}
 .carousel-item{
   h2{margin-top: 2em;}
@@ -100,8 +112,8 @@ a.display:hover{
   p.sub{font-weight: 600;font-size: 1.2em;}
 }
 .carousel-indicators{bottom: -60px;}
-.carousel-indicators li{background-color: #CBCBCB;}
-.carousel-indicators .active{background-color: $blue;}
+.carousel-indicators li{background-color: #eee;}
+.carousel-indicators .active{background-color: #000;}
 .carousel-control-prev{left: -130px;}
 .carousel-control-prev-icon{background-image: url('/img/before.svg');}
 .carousel-control-next{right: -90px;}
@@ -120,21 +132,20 @@ a.display:hover{
 .focal{h2,h3,h4,a{color: #99CFDD;}.behind,.socle{background-color: #99CFDD;}}
 .endonymous{h2,h3,h4,a{color: #E2BD81;}.behind,.socle{background-color: #E2BD81;}}
 .datato{h2,h3,h4,a{color: #000;}.behind,.socle{background-color: #E3E3E3;}}
-.illustrations{h2,h3,h4,a{color: $blue;}.behind,.socle{background-color: $blue;}}
+.illustrations{h2,h3,h4,a{color: #53BFD0;}.behind,.socle{background-color: #53BFD0;}}
 .m-t{h2,h3,h4,a{color: #DC493A;}.behind,.socle{background-color: #DC493A;}}
-.text p{font-size: 1.5em;font-weight: 300;}
 
 .behind{
   animation: blockappear 0.8s cubic-bezier(0,1,.65,1) 0.5s forwards;
 }
 .socle{display: block; width: 90%; height: 80px; position: absolute; bottom: 0px; z-index: -1;}
 
-p.nice{font-family: $title;color: $blue;font-size: 1.8em;transform: rotate(-5deg);}
+p.nice{font-family: $title;color: $black;font-size: 1.8em;transform: rotate(-5deg);}
 .photo{
   visibility: hidden;
   animation: h2appear 0.8s cubic-bezier(0,1,.65,1.15) 0.5s forwards;
 }
-.padding{padding-top: 1em;}
+.padding{padding-top: 2em;}
 footer{clear: both;margin-bottom: 1em; margin-top: auto;}
 
 footer p{
