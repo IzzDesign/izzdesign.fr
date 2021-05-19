@@ -49,6 +49,7 @@ a.movelink{
   }
 .margin{margin: 2em 0}
 
+.carousel-item{height: 600px;}
 .endobujo a.movelink:hover{color: #E3E3E3; background-color: #441151;}
 .focal a.movelink:hover{color: #E3E3E3; background-color: #99CFDD;}
 .endonymous a.movelink:hover{color: #E3E3E3; background-color: #E2BD81;}
@@ -113,7 +114,7 @@ nav{margin-bottom: 1.5em;}
 .navbar-collapse{justify-content: center;}
 .carousel{margin: 2em 0;}
 .carousel-item{
-  h2{margin-top: 2em;}
+  h2{margin-top: 1.2em;}
   p{font-size: 1.5em;font-weight: 300;}
   p.sub{font-weight: 600;font-size: 1.2em;}
 }
