@@ -22,7 +22,13 @@ $title: 'Rushing Nightshade';
 }
 
 body{display:flex; flex-direction: column; height: 100vh; background: #fff;font-family:$font; color:$text;display: flex; flex-direction: column;}
-h1,h2,h3,h4{font-family:$title; color: $black;margin-top: 1em;}
+h1,h2,h3,h4, p.sub{
+  font-family:$font;
+  color: $black;
+  margin-top: 1em;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
 h2{font-size: 3.5em; position: relative; bottom: 20px;}
 h2{
     visibility: hidden;
@@ -41,6 +47,7 @@ a.movelink{
     visibility: hidden;
     transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 1.5s;
   }
+.margin{margin: 2em 0}
 
 .endobujo a.movelink:hover{color: #E3E3E3; background-color: #441151;}
 .focal a.movelink:hover{color: #E3E3E3; background-color: #99CFDD;}
@@ -58,10 +65,6 @@ a.projets{
   transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 1.5s;
   &:hover{margin-left: 3px;}
 }
-
-h3{font-size: 2.5em;}
-h4{font-size: 2em; color: $title-section;}
-p.sub{text-transform: uppercase;font-weight: 600;font-size: 1.2em;}
 
 a{color: $black; font-family: $font; font-size: 1.5em; font-weight: 600;}
 /*a:hover{text-decoration: none;color:$black;}*/
@@ -86,15 +89,18 @@ a.display:hover{
   animation-timing-function: ease-in-out;
   background-color: #AD310B;
 }
-
 .text p{font-size: 1.2em;font-weight: 400;}
-p.important{
-  text-transform: uppercase;
+h3, h4, p.sub{
   font-weight: 600;
   letter-spacing: 0.15em;
+}
+h3{
+  font-size: 1em;
+  margin-top: 1em;
+}
+h4{
   font-size: 1.3em;
 }
-
 .navbar-brand{display: block; margin:0 auto; img{width: 200px;}}
 nav{margin-bottom: 1.5em;}
 .navbar-light .navbar-nav .nav-link, .dropdown-item{
@@ -128,12 +134,12 @@ nav{margin-bottom: 1.5em;}
 .portfolio img{visibility: hidden; animation:imgappear 0.8s cubic-bezier(0,1,.65,1) 0.5s forwards;}
 .absolute{position: absolute;z-index: 2; right: 0;bottom: 0;}
 .behind{display:block; width:0px; height: 0px; position: absolute; right: 45px; z-index: 1;bottom: 0;}
-.endobujo{h2,h3,h4,a{color: #441151;}.behind,.socle{background-color: #441151;}}
-.focal{h2,h3,h4,a{color: #99CFDD;}.behind,.socle{background-color: #99CFDD;}}
-.endonymous{h2,h3,h4,a{color: #E2BD81;}.behind,.socle{background-color: #E2BD81;}}
-.datato{h2,h3,h4,a{color: #000;}.behind,.socle{background-color: #E3E3E3;}}
-.illustrations{h2,h3,h4,a{color: #53BFD0;}.behind,.socle{background-color: #53BFD0;}}
-.m-t{h2,h3,h4,a{color: #DC493A;}.behind,.socle{background-color: #DC493A;}}
+.endobujo{h2,h4,a{color: #441151;}.behind,.socle{background-color: #441151;}}
+.focal{h2,h4,a{color: #99CFDD;}.behind,.socle{background-color: #99CFDD;}}
+.endonymous{h2,h4,a{color: #E2BD81;}.behind,.socle{background-color: #E2BD81;}}
+.datato{h2,h4,a{color: #000;}.behind,.socle{background-color: #E3E3E3;}}
+.illustrations{h2,h4,a{color: #53BFD0;}.behind,.socle{background-color: #53BFD0;}}
+.m-t{h2,h4,a{color: #DC493A;}.behind,.socle{background-color: #DC493A;}}
 
 .behind{
   animation: blockappear 0.8s cubic-bezier(0,1,.65,1) 0.5s forwards;
