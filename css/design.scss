@@ -257,10 +257,13 @@ video::-moz-media-controls-fullscreen-button{
   .carousel-control-prev{left: 0px;bottom: auto;}
   .carousel-control-next{right: 0px; bottom: auto;}
   .prev{display: none;}
+  a.projets{font-size: 1.8em;padding: 0;}
+  h2{font-size: 2.5em;;}
+  .carousel-item{height: 800px;}
 }
 
 @media (max-width: 480px) {
   .behind, .img-presentation{display: none !important;}
-  h2{font-size: 2.5em;}
+  h2{font-size: 1.5em;margin-top: 1em;;}
   .carousel-item h2{margin-top: 1.5em;}
 }
