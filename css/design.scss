@@ -29,8 +29,9 @@ h1,h2,h3,h4, p.sub, p.important{
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
-h2{font-size: 3.5em; position: relative; bottom: 20px;}
 h2{
+    font-size: 2em;
+    position: relative;
     visibility: hidden;
     animation: h2appear 0.8s cubic-bezier(0,1,.65,1.15) 0.5s forwards;
   }
@@ -67,7 +68,6 @@ a.projets{
 }
 
 a{color: $black; font-family: $font; font-size: 1.5em; font-weight: 600;}
-/*a:hover{text-decoration: none;color:$black;}*/
 span.link i, span.link a{display: inline-block;color:$title-section;font-size: 1.2em;padding-right: 10px;margin-top: 0.5em;}
 span.link i:first-child{padding-right: 5px;}
 span.link a{font-weight: 500;}
@@ -101,7 +101,6 @@ h3{
 h4{
   font-size: 1.3em;
 }
-.navbar{padding: 0;}
 .navbar-brand{display: block; margin:0 auto; img{width: 170px;}}
 .navbar-light .navbar-nav .nav-link, .dropdown-item{
   font-family: $font;
@@ -111,33 +110,19 @@ h4{
   margin-right:1em;
 }
 .navbar-collapse{justify-content: center;}
-.carousel{margin: 1em 0;}
-.carousel-item{
-  h2{margin-top: 1.2em;}
-  p{font-size: 1.5em;font-weight: 300;}
-  p.sub{font-weight: 600;font-size: 1.2em;}
-}
-.carousel-indicators{position: relative; bottom: 0;}
-.carousel-indicators li{background-color: #eee;}
-.carousel-indicators .active{background-color: #000;}
-.carousel-control-prev{left: -130px;}
-.carousel-control-prev-icon{background-image: url('/img/before.svg');}
-.carousel-control-next{right: -90px;}
-.carousel-control-next-icon{background-image: url('/img/after.svg');}
-
 .img-presentation{
   z-index: 2;
   visibility: hidden;
   width: 0px;
   animation: imgappear 0.8s cubic-bezier(0,1,.65,1) 0.5s forwards;
 }
-.portfolio img{visibility: hidden; animation:imgappear 0.8s cubic-bezier(0,1,.65,1) 0.5s forwards;}
-.absolute{position: absolute;z-index: 2; right: 0;bottom: 0;}
+.portfolio img{visibility: hidden; animation:illuappear 0.8s cubic-bezier(0,1,.65,1) 0.5s forwards;}
+.absolute{height: auto; img{position: absolute; z-index: 2;right: 0;bottom: 0;}}
 .behind{display:block; width:0px; height: 0px; position: absolute; right: 45px; z-index: 1;bottom: 0;}
 .endobujo{h2,h4,a{color: #441151;}.behind,.socle{background-color: #441151;}}
 .focal{h2,h4,a{color: #99CFDD;}.behind,.socle{background-color: #99CFDD;}}
 .endonymous{h2,h4,a{color: #E2BD81;}.behind,.socle{background-color: #E2BD81;}}
-.datato{h2,h4,a{color: #000;}.behind,.socle{background-color: #E3E3E3;}}
+.datatopia{h2,h4,a{color: #000;}.behind,.socle{background-color: #E3E3E3;}}
 .illustrations{h2,h4,a{color: #53BFD0;}.behind,.socle{background-color: #53BFD0;}}
 .m-t{h2,h4,a{color: #DC493A;}.behind,.socle{background-color: #DC493A;}}
 
@@ -201,15 +186,6 @@ video::-moz-media-controls-fullscreen-button{
   font-size: 1.1em;
 }
 
-.prev{
-  div:nth-child(2n){text-align: center;}
-  div:last-child{text-align: right;}
-  margin: 2em 0;
-  a{font-weight: 300;color: $text;}
-  font-size: 0.7em;
-  letter-spacing: 0.2em;
-}
-
 @keyframes hover{
   0%   {bottom: 0;}
   100% {bottom: 1%;}
@@ -217,10 +193,15 @@ video::-moz-media-controls-fullscreen-button{
 
 @keyframes blockappear{
   0%    {width: 0px; height: 0px;}
-  100%  {width: 250px; height: 500px;}
+  100%  {width: 250px; height: 100%;}
 }
 
 @keyframes imgappear{
+  0%    {width: 0px; visibility: hidden;}
+  100%  {width: 70%; visibility: visible;}
+}
+
+@keyframes illuappear{
   0%    {width: 0px; visibility: hidden;}
   100%  {width: 100%; visibility: visible;}
 }
@@ -238,33 +219,27 @@ video::-moz-media-controls-fullscreen-button{
 
 }
 @media (max-width: 991px) {
-  .absolute{
+  .absolute img{
     position: inherit;
   }
-  .carousel-control-prev{left: -70px;}
-  .carousel-control-next{right: -50px;}
-  .carousel-item h2{margin-top: 0.7em;}
   .behind{height: 20px;}
   .photo img{width: 50%;}
   .img-presentation{visibility: visible;}
   @keyframes blockappear{
    0%    {width: 0px; height: 0px;}
-   100%  {width: 500px; height: 200px;}
+   100%  {width: 90%; height: 50%;}
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 890px) {
 
-  .carousel-control-prev{left: 0px;bottom: auto;}
-  .carousel-control-next{right: 0px; bottom: auto;}
-  .prev{display: none;}
+}
+@media (max-width: 600px) {
   a.projets{font-size: 1.8em;padding: 0;}
   h2{font-size: 2.5em;;}
-  .carousel-item{height: 800px;}
+  .behind{right: 0;}
 }
 
 @media (max-width: 480px) {
-  .behind, .img-presentation{display: none !important;}
   h2{font-size: 1.5em;margin-top: 1em;;}
-  .carousel-item h2{margin-top: 1.5em;}
 }
