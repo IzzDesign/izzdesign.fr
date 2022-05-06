@@ -2,25 +2,41 @@
 layout: default
 ---
 <div class="container">
-  <div class="row">
+  <div class="presentation">
+    <div class="citation">
+      <img src="/img/profil.png" width="208" height="212">
+      <div class="texte-citation">
+        <a href="/contact.html" class="button contact">
+          <span>contactez-moi →</span>
+        </a>
+        <p class="roboto-slab">Internet est un</p>
+        <p class="roboto-slab light">magnifique outil pour</p>
+        <p class="rushing">partager nos connaissances</p>
+        <span class="roboto-slab">et</span>
+        <p class="rushing">sensibiliser le public,</p>
+        <p class="roboto-slab light">c'est avec cette idée que je veux</p>
+        <p class="roboto-slab big">concevoir votre site web.</p>
+      </div>
+    </div>
+    <div class="texte-presentation">
+      <h3>À propos de moi</h3>
+      <p>📣 Internet est un magnifique outil pour partager nos connaissances et sensibiliser le public : c'est avec cette idée que je veux concevoir vos sites web.</p>
+      <p>✏️ Graphiste digitale de carrière, c'est après la découverte de ma maladie chronique (l'endométriose) que je développe un roman graphique sur mon parcours, développant mes compétences en BD et illustrations. Je publie gratuitement ce roman sur mon site d'informations sur l'endométriose, guidant les femmes au travers de cette condition. Gagnant en popularité sur les réseaux, mes sites permettent de sensibiliser avec humour sur l'endométriose.</p>
+      <p>✊ Je suis persuadée qu'offrir une information de qualité aux utilisateurs ne peut qu'avoir un impact positif, je me spécialise depuis sur les sites web à portée éducative et informationnelle.</p>
+    </div>
+  </div>
+  <div class="portfolio">
     {% assign sorted_portfolio= site.pages | where: "layout", "portfolio" | sort: "order" %}
     {% for p in sorted_portfolio %}
-      <div class="col-lg-12 padding">
-        <div class="row {{ p.title | downcase }}">
-          <div class=" col-lg-4 col-sm-12 absolute">
-            <img src="/img/{{ p.title | downcase }}.png" alt="{{ p.alt_image }}" title="{{ p.title_image }}" class="img-presentation d-block">
-            <div class="behind"></div>
+      <a href="{{ p.url }}" class="movelink">
+        <div class="portfolio-stickers">
+          <div>
+            <img src="/img/{{ p.title | downcase }}.png" alt="{{ p.alt_image }}" title="{{ p.title_image }}">
           </div>
-          <div class="col-lg-7 col-sm-12">
-            <h2>{{ p.title }}</h2>
-            <p class="sub">{{ p.skills }}</p>
-            <p>{{ p.description }}</p>
-            <a href="{{ p.url }}" class="movelink">voir le projet</a>
-          </div>
-         
+          <h2>{{ p.title }}</h2>
+          <h3>{{ p.subtitles }}</h3>
         </div>
-        
-      </div>
+      </a>
     {% endfor %} 
   </div>
 </div>

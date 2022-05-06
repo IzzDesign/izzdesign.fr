@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<div class="container-row">
+  <div class="illustrations">
+
+  </div>
+  <div class="form-contact">
+    <a href="/index.html" class="back">← Retour</a>
+    <h2 class="rushing">Contactez-moi</h2>
+    <form action="https://neamar.fr/email.php" accept-charset="utf-8" onsubmit="document.getElementById('protection').value = 2" method="POST" id="contactform">
+        <input type="text" id="nom" name="nom" tabindex="1" placeholder="Nom" />
+        <input type="text" id="email" name="_replyto" id="mail" placeholder="Email" autofocus required/>
+        <input type="hidden" name="_to" value="contact@endonymous.fr" />
+        <input type="hidden" name="protection" id="protection" value="1" />
+        <input type="text" name="_subject" id="titre" value="" placeholder="Objet" />
+        <textarea id="message" name="message" tabindex="4" rows="15"></textarea>
+        <input type="submit">
+        <div>
+          <span class="inside">envoyer →</span>
+          <span class="hover">envoyer →</span>
+        </div>  
+      </form>
+  </div>
+</div>
