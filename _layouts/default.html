@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="../css/design.css">
   <link rel="stylesheet" type="text/css" href="../css/portfolio.css">
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="../src/css/swipebox.css">
   <script async defer data-domain="izzdesign.fr" src="https://t.neamar.fr/js/plausible.js"></script>
 </head>
 <body>
@@ -24,29 +24,38 @@
     <div class="reseaux">
       <a href="https://www.malt.fr/profile/isabelledulin"><img src="../img/malt.svg" width="25" height="25"></a>
       <a href="https://github.com/izzdesign"><img src="../img/git.svg" width="25" height="25"></a>
-      <a href="https://github.com/izzdesign"><img src="../img/git.svg" width="25" height="25"></a>
+      <a href="/contact.html"><img src="../img/mail.svg" width="25" height="25"></a>
     </div>
   </div>
   
   {{content}}
-  <footer>
-    <h4>Contact</h4>
-    <div>
-      <a href="/contact.html" class="button contact">
-        <span>contactez-moi →</span>
-      </a>
-    </div>
-    <h4>Blog participatif</h4>
-    <div>
-      <a href="https://hysteresis.blog" class="button">
-        <span>hysteresis.blog</span>
-      </a>
-    </div>
-    <div class="reseaux">
-      <a href="https://www.malt.fr/profile/isabelledulin"><img src="../img/malt.svg" width="25" height="25"></a>
-      <a href="https://github.com/izzdesign"><img src="../img/git.svg" width="25" height="25"></a>
-      <a href="https://github.com/izzdesign"><img src="../img/git.svg" width="25" height="25"></a>
-    </div>
-  </footer>
+    <footer>
+      <h4>Contact</h4>
+      <div>
+        <a href="/contact.html" class="button contact">
+          <span>contactez-moi →</span>
+        </a>
+      </div>
+      <h4>Blog participatif</h4>
+      <div>
+        <a href="https://hysteresis.blog" class="button">
+          <span>hysteresis.blog</span>
+        </a>
+      </div>
+      <div class="reseaux">
+        <a href="https://www.malt.fr/profile/isabelledulin"><img src="../img/malt.svg" width="25" height="25"></a>
+        <a href="https://github.com/izzdesign"><img src="../img/git.svg" width="25" height="25"></a>
+        <a href="/contact.html"><img src="../img/mail.svg" width="25" height="25"></a>
+      </div>
+    </footer>
+    <script src="../src/js/jquery-3.5.1.min.js"></script>
+    <script src="../src/js/jquery.swipebox.js"></script>
+    <script type="text/javascript">
+      ;( function( $ ) {
+
+        $( '.swipebox' ).swipebox();
+
+      } )( jQuery );
+    </script>
   </body>
 </html>

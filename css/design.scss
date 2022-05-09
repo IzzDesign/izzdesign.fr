@@ -70,7 +70,9 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 0.5em;
   h3{
+    text-align: center;
     margin: 0;
     font-size: 0.8em;
     opacity: 0;
@@ -104,11 +106,33 @@ body{
   animation: top-appear 0.5s cubic-bezier(0,1,.65,1.15) 0.1s forwards;
   a{
     background-color: #F7F7F7;
-    border-radius: 20px 5px;
+    border-radius: 10px 5px;
     width: 25px;
     height: 25px;
     box-shadow: 1px 1px 1px #eee;
     margin: 0 auto;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    &::before{
+      content: '•';
+      position: absolute;
+      transform: translateY(-30px);
+      color: $green;
+      width: 25px;
+      text-align: center;
+      opacity: 0;
+    }
+    &:hover{
+      background-color: $green;
+      &::before{
+        transform: translateY(-7.5px);
+        opacity: 1;
+        color: #fff;
+      }
+      img{
+        transform: translateY(30px);
+      }
+    }
   }
 }
 
@@ -143,11 +167,11 @@ footer{
   flex-wrap: wrap;
   > div{
     flex: 1;
+    min-height: 350px;
   }
   .texte-presentation{
     min-width: 500px;
     opacity: 0;
-    transform: translateY(-200px);
     animation: top-appear 1.5s cubic-bezier(0,1,.65,1.15) 4s forwards;
   }
 }
@@ -155,7 +179,6 @@ footer{
 .citation{
   display: flex;
   text-align: center;
-  transform: translateY(-50px);
   p{
     line-height: 1em;
     margin: 0;
@@ -167,6 +190,7 @@ footer{
 }
 .texte-citation{
   transform: translate(-30px, 120px);
+  height: 200px;
   p:nth-of-type(1){
     opacity: 0;
     animation: left-appear 1.2s cubic-bezier(0,1,.65,1.15) 1s forwards;
@@ -199,17 +223,17 @@ footer{
 
 .roboto-slab{
   font-family: 'Roboto Slab', serif;
-  font-size: 25px;
+  font-size: 1.5em;
 }
 .light{
   font-weight: 300;
 }
 .big{
-  font-size: 30px;
+  font-size: 2em;
 }
 
 span.roboto-slab{
-  font-size: 15px;
+  font-size: 1.2em;
 }
 
 .rushing{
@@ -459,8 +483,9 @@ a:hover{text-decoration: none;}
   width: 100%;
 }
 .img-column{
-  width: 600px;
+  max-width: 600px;
   margin: 0 auto;
+  width: 100%;
 }
 
 .full{
@@ -520,40 +545,6 @@ a:hover{text-decoration: none;}
 }
 
 a{color: $black; font-family: $font; font-size: 1.5em; font-weight: 600;}
-span.link i, span.link a{display: inline-block;color:$title-section;font-size: 1.2em;padding-right: 10px;margin-top: 0.5em;}
-span.link i:first-child{padding-right: 5px;}
-span.link a{font-weight: 500;}
-span.link i,span.link a, a.anim{position: relative;}
-span.link a i:hover,span.link a:hover,a.anim:hover{
-  text-decoration: none;
-  animation: hover 0.1s cubic-bezier(0,1,.65,1.15) 0s forwards;
-}
-
-.img-fade-in{
-  position: relative;
-  background-color: #321346;
-  border-radius: 100px 10px;
-  width: 100%;
-  &.big-img{
-    height: 575px;
-  }
-  &.little-img{
-    height: 455px;
-  }
-  img{
-    position: absolute;
-    border-radius: 100px 10px;
-  }
-  img:nth-child(3) {
-    animation: xfade 18s 0s infinite;
-  }
-  img:nth-child(2) {
-    animation: xfade 18s 6s infinite;
-  }
-  img:nth-child(1) {
-    animation: xfade 18s 12s infinite;
-  }
-}
 
 .eb-reseaux{
   column-gap: 10%;
@@ -571,14 +562,23 @@ span.link a i:hover,span.link a:hover,a.anim:hover{
 }
 
 .list-row{
+  align-items: flex-start;
   div{
+    text-align: left;
+    flex: 1;
+    h5{
+      margin-top: 0.5em;
+    }
+    span{
+      font-size: 2em;
+    }
     ul{
       padding-left: 0;
       list-style: none;
       li{
         font-size: 1.2em;
-        margin-top: 1.2em;
-        line-height: 0.8em;
+        margin-top: 0.5em;
+        line-height: 1.2em;
       }
     }
   }
@@ -586,6 +586,38 @@ span.link a i:hover,span.link a:hover,a.anim:hover{
 
 .b-radius{
   border-radius: 100px 10px;
+}
+
+.illustrations{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  a{
+    opacity: 0;
+    transform: translateY(-200px);
+    &:nth-child(1){
+      animation: top-appear 1s cubic-bezier(0,1,.65,1.15) 1.5s forwards;
+    }
+    &:nth-child(2){
+      animation: top-appear 1s cubic-bezier(0,1,.65,1.15) 1.7s forwards;
+    }
+    &:nth-child(3){
+      animation: top-appear 1s cubic-bezier(0,1,.65,1.15) 1.9s forwards;
+    }
+    &:nth-child(4){
+      animation: top-appear 1s cubic-bezier(0,1,.65,1.15) 2.1s forwards;
+    }
+    &:nth-child(5){
+      animation: top-appear 1s cubic-bezier(0,1,.65,1.15) 2.4s forwards;
+    }
+    &:nth-child(6){
+      animation: top-appear 1s cubic-bezier(0,1,.65,1.15) 2.7s forwards;
+    }
+  }
+  img{
+    flex: 1;
+    max-width: 300px;
+  }
 }
 
 @keyframes xfade{
@@ -615,23 +647,111 @@ span.link a i:hover,span.link a:hover,a.anim:hover{
   100%  {transform: translate(-180px, -60px); opacity: 1;}
 }
 
-@media (max-width: 1199px) and (min-width: 991px) {
-  span.link i, span.link a{
-    font-size: 1em;
-    padding-right:5px;
+@media (max-width: 1040px) {
+  body{
+    margin: 0 1em;
+  }
+  .container-row{
+    flex-direction: column;
+    form.contact{
+      order: 1;
+    }
+    .illustrations{
+      order:2;
+      a, img{
+        width: 100%;
+        height: auto;
+        max-height: auto;
+        max-width: 100%;
+      }
+    }
+  }
+  .presentation{
+    flex-direction: column;
   }
 }
 
-@media (max-width: 991px) {
-
+@media (max-width: 990px) {
+  .row{
+    flex-direction: column;
+  }
+  .list-row{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
-@media (max-width: 890px) {
-
+@media (max-width: 700px) {
+  .images{
+    flex-direction: column;
+  }
+  .portfolio-row{
+    flex-direction: column;
+    column-gap: 0;
+    div.column{
+      width: 100%;
+    }
+  }
+  .row img{
+    margin: 0.5em 0;
+  }
 }
-@media (max-width: 600px) {
 
+@media (max-width: 610px) {
+  .citation{
+    flex-direction: column;
+    .texte-citation{
+      transform: translate(0, 0);
+      a.button{
+        transform: translate(180px, 180px);
+      }
+    }
+  }
+  .citation img{
+    margin: 0 auto;
+  }
+  .presentation .texte-presentation{
+    min-width: auto;
+  }
+  .portfolio{
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .portfolio .portfolio-stickers div{
+    width: 100%;
+  }
+
+  .roboto-slab{
+    font-size: 1.2em;
+  }
+  .big{
+    font-size: 1.5em;
+  }
+
+  span.roboto-slab{
+    font-size: 1em;
+  }
+
+  .rushing{
+    font-family: 'Rushing Nightshade';
+    font-size: 28px;
+    transform: rotate(-0.5deg);
+  }
 }
 
 @media (max-width: 480px) {
+  body{
+    margin: 0 0.5em;
+  }
+  h1,h2{
+    font-size: 1.2em;
+  }
+  .list-row{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .form-contact form input[type="text"]{
+    min-width: 100%;
+  }
 }
