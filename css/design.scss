@@ -339,9 +339,9 @@ p{
 
 .portfolio{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  column-gap: 20px;
+  gap: 100px;
   margin-top: 2em;
   flex-wrap: wrap;
   a{
@@ -361,12 +361,10 @@ p{
   }
   .portfolio-stickers{
     div{
-      border-radius: 100px 10px;
       object-fit: contain;
       overflow: hidden;
       transform: scale(1);
-      width: 552px;
-      height: 324px;
+      width: 100%;
       transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 1.5s;
     }
     h2{

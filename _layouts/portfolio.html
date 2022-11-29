@@ -4,4 +4,21 @@ layout: default
 
 <div class="container">
     {{ content }}
+    <h4>Autres projets</h4>
+    <div class="portfolio">
+    {% assign sorted_portfolio= site.pages | where: "layout", "portfolio" | sort: "order" %}
+    {% for p in sorted_portfolio %}
+        {% if p.name != page.name %}
+          <a href="{{ p.url }}" class="movelink">
+            <div class="portfolio-stickers">
+              <div>
+                <img src="/img/{{ p.title | downcase }}.png" alt="{{ p.alt_image }}" title="{{ p.title_image }}">
+              </div>
+              <h2>{{ p.title }}</h2>
+              <h3>{{ p.subtitles }}</h3>
+            </div>
+          </a>
+        {% endif %}
+    {% endfor %} 
+  </div>
 </div>
