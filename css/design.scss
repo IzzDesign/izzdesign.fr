@@ -383,6 +383,7 @@ p{
     img{
       transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 1.5s;
       transform: scale(1);
+      width: 100%;
     }
   }
 }
@@ -514,11 +515,12 @@ a:hover{text-decoration: none;}
 
 .portfolio-row{
   display: flex;
-  max-width: 900px;
+  max-width: 1300px;
   margin: 0 auto;
   flex-wrap: wrap;
   column-gap: 4%;
   justify-content: center;
+  align-items: center;
   div.column{
     width: 48%;
     margin-top: 1em;
