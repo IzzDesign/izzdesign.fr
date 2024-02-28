@@ -67,6 +67,11 @@ body{
   align-items: center;
 }
 
+.portfolio-project p.text-left, .portfolio-project .text-left{
+  text-align: left;
+  width: 70%;
+}
+
 .bandeau{
   display: flex;
   flex-direction: column;
@@ -310,22 +315,35 @@ a.button.endobujo::before{
 h2,h3,h4,h5{
   font-family:$font;
   color: $black;
-  margin-top: 1em;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
+  margin: 1em 0 0.5em 0;
+  letter-spacing: 0.1em;
 }
+
 h2{
-  font-size: 2em;
+  font-size: 2.5em;
   position: relative;
   opacity: 0;
   animation: left-appear 0.8s cubic-bezier(0,1,.65,1.15) 0.5s forwards;
 }
-h3{
+h2.h2-portfolio{
+  margin-bottom: 0;
+}
+
+p.h3{
   color: $text;
+  text-transform: uppercase;
   font-size: 0.8em;
   font-weight: 300;
   font-family: 'Roboto Slab', serif;
 }
+
+h4{
+  font-size: 2em;
+  letter-spacing: 0.05em;
+  font-weight: normal;
+  margin: 0.5em 0;
+}
+
 h4{
   font-size: 1.4em;
   margin-bottom: 0.5em;
@@ -366,6 +384,7 @@ p{
       overflow: hidden;
       transform: scale(1);
       width: 100%;
+      max-width: 900px;
       transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 1.5s;
     }
     h2{
@@ -482,6 +501,11 @@ a:hover{text-decoration: none;}
 .img-fluid{
   width: 100%;
 }
+
+.img-margin{
+  margin: 1.5em 0;
+}
+
 .img-column{
   max-width: 600px;
   margin: 0 auto;
@@ -492,8 +516,14 @@ a:hover{text-decoration: none;}
   display: flex;
   flex-direction: column;
 }
-.portfolio-entete{
+.endonymous{
   text-align: center;
+  h2,h3,p{
+    color: #072359;
+  }
+  a.button{
+    background-color: #072359;
+  }
   .images{
     display: flex;
     column-gap: 2%;
@@ -520,10 +550,15 @@ a:hover{text-decoration: none;}
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
   p{
     width: 50%;
     text-align: center;
   }
+}
+
+.portfolio-entete{
+  text-align: center;
 }
 
 .portfolio-row{
@@ -542,6 +577,47 @@ a:hover{text-decoration: none;}
   }
 }
 
+.endobujo{
+  p, h2, h3{
+    color: #321346;
+  }
+  a.button{
+    background-color: #321346;
+  }
+  .endobujo-header{
+    background-color: #D8CBDF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5em;
+    transform: translateY(80px);
+    z-index: 0;
+  }
+  .endobujo-book{
+    z-index: 1;
+  }
+}
+
+.management-battle{
+  h2{
+    color: #3CA9BF;
+  }
+}
+
+.mb-header{
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: inherit;
+  transform: translateY(-80px);
+  z-index: 0;
+  width: 50%;
+  p{
+    width: 90%;
+  }
+}
+
 .link{
   display: flex;
   flex-direction: column;
@@ -557,15 +633,19 @@ a:hover{text-decoration: none;}
 a{color: $black; font-family: $font; font-size: 1.5em; font-weight: 600;}
 
 .eb-reseaux{
-  column-gap: 10%;
+  column-gap: 20%;
   div{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
     p{
       margin: 0;
       line-height: 1.2em;
+      width: fit-content;
       &.rushing{
         font-size: 3em;
-        color: $black;
+        color: #B09DBC;
       }
     }
   }
@@ -727,6 +807,18 @@ a{color: $black; font-family: $font; font-size: 1.5em; font-weight: 600;}
   .portfolio{
     flex-direction: column;
     flex-wrap: nowrap;
+  }
+  .portfolio-project{
+    img{
+      width: 100%;
+      height: fit-content;
+    }
+    p{
+      width: 80%;
+    }
+    h2{
+      font-size: 1.8em;
+    }
   }
   .portfolio .portfolio-stickers div{
     width: 100%;

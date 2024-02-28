@@ -3,8 +3,12 @@ layout: default
 ---
 
 <div class="container">
+    <div class="portfolio-entete">
+      <h2 class="h2-portfolio">{{ page.title }}</h2>
+      <p class="h3">{{ page.subtitles }}</p>
+    </div>
     {{ content }}
-    <h4>Autres projets</h4>
+    <h2>Autres projets</h2>
     <div class="portfolio">
     {% assign sorted_portfolio= site.pages | where: "layout", "portfolio" | sort: "order" %}
     {% for p in sorted_portfolio %}
