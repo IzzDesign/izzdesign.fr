@@ -13,13 +13,13 @@ layout: default
     {% assign sorted_portfolio= site.pages | where: "layout", "portfolio" | sort: "order" %}
     {% for p in sorted_portfolio %}
         {% if p.name != page.name %}
-          <a href="{{ p.url }}" class="movelink">
+          <a href="{{ p.url }}">
             <div class="portfolio-stickers">
               <div>
                 <img src="/img/{{ p.title | downcase }}.png" alt="{{ p.alt_image }}" title="{{ p.title_image }}">
               </div>
               <h2>{{ p.title }}</h2>
-              <h3>{{ p.subtitles }}</h3>
+              <p class="h3">{{ p.subtitles }}</p>
             </div>
           </a>
         {% endif %}
