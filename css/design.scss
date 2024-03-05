@@ -48,18 +48,6 @@ body{
   width: 100%;
 }
 
-.container-row{
-  display: flex;
-  max-width: 1300px;
-  width: 100%;
-  justify-content: center;
-  margin: 0 auto;
-  column-gap: 20px;
-  div{
-    flex: 1;
-  }
-}
-
 .row{
   display: flex;
   column-gap: 2%;
@@ -381,31 +369,43 @@ p{
       }
     }
   }
-  .portfolio-stickers{
-    div{
-      object-fit: contain;
-      overflow: hidden;
-      transform: scale(1);
-      width: 100%;
-      max-width: 900px;
-      transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 1.5s;
-    }
-    h2{
-      font-family: $font;
-      text-transform: initial;
-      text-align: center;
-      margin: 0;
-    }
-    p.h3{
-      color: $text;
-      font-weight: 300;
-      text-align: center;
-    }
-    img{
-      transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 1.5s;
-      transform: scale(1);
-      width: 100%;
-    }
+}
+
+.portfolio-stickers{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  div{
+    object-fit: contain;
+    overflow: hidden;
+    transform: scale(1);
+    max-width: 900px;
+    transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 1.5s;
+  }
+  h2{
+    font-family: $font;
+    text-transform: initial;
+    text-align: center;
+    margin: 0;
+  }
+  p.h3{
+    color: $text;
+    font-weight: 300;
+    text-align: center;
+  }
+  img{
+    transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 1.5s;
+    transform: scale(1);
+    width: 100%;
+  }
+}
+
+.portfolio-stickers.portfolio-others{
+  div{
+    width: 70%;
+  }
+  h2{
+    font-size: clamp(0.8em, 3vh, 1.2em);
   }
 }
 
@@ -413,6 +413,7 @@ a:hover{text-decoration: none;}
 
 .form-contact{
   opacity: 0;
+  width: 60%;
   transform: translateX(-200px);
   animation: left-appear 0.8s cubic-bezier(0,1,.65,1.15) 1.5s forwards;
   h2{
@@ -872,7 +873,9 @@ a{color: $black; font-family: $font; font-size: 1.5em; font-weight: 600;}
   .portfolio .portfolio-stickers div{
     width: 100%;
   }
-
+  .form-contact{
+    width: 100%;
+  }
   .roboto-slab{
     font-size: 1.2em;
   }

@@ -14,7 +14,7 @@ layout: default
     {% for p in sorted_portfolio %}
         {% if p.name != page.name %}
           <a href="{{ p.url }}">
-            <div class="portfolio-stickers">
+            <div class="portfolio-stickers portfolio-others">
               <div>
                 <img src="/img/{{ p.title | downcase }}.png" alt="{{ p.alt_image }}" title="{{ p.title_image }}">
               </div>
