@@ -1,5 +1,4 @@
 ---
-
 ---
 @font-face {
     font-family: 'Rushing Nightshade';
@@ -295,6 +294,12 @@ a.button.endobujo::before{
 }
 a.button.soloqchall::before{
   content: 'soloqchallenge.fr →';
+}
+a.button.soloqlol::before{
+  content: 'soloqlol.fr →';
+}
+a.button.choltraiteur::before{
+  content: 'choltraiteur.fr →';
 }
 
 .texte-citation a.button{
@@ -654,6 +659,40 @@ a:hover{text-decoration: none;}
   }
 }
 
+.soloqchallenge2{
+  background-color: #05080F;
+  color: #efefed;
+  overflow: hidden;
+  padding-bottom: 5em;
+  p{
+    margin: 2em 0;
+  }
+  .link{
+    margin-top: 5em;
+  }
+  a.button.soloqchall{
+    background-color: #efefed;
+    span,&::before{color: #0E141E;}
+  }
+}
+
+.soloqlol{
+  background-color: #29010F;
+  color: #efefed;
+  overflow: hidden;
+  padding-bottom: 5em;
+  p{
+    margin: 2em 0;
+  }
+  .link{
+    margin-top: 5em;
+  }
+  a.button.soloqlol{
+    background-color: #FF0000;
+    span,&::before{color: #ECE5D3}
+  }
+}
+
 .link{
   display: flex;
   flex-direction: column;
@@ -661,6 +700,7 @@ a:hover{text-decoration: none;}
   overflow: hidden;
   text-align: center;
   a.button{
+    margin-top: 1em;
     position: relative;
     display: block;
   }
